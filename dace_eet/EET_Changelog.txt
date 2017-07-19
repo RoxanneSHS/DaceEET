@@ -1,0 +1,7 @@
+V 3.0
+--------
+- Branched off from EE v2
+- adapted for EET
+- fixed scripts for creature creation
+- fixed dialogue errors
+- Weidu version update
