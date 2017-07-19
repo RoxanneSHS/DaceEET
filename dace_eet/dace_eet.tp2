@@ -80,11 +80,8 @@ EXTEND_TOP    ~cut218g.bcs~  ~dace_eet/scripts/cut218g.baf~
 ADD_JOURNAL EXISTING TITLE (#74337) @1031 @1038 @2035 USING ~dace_eet/translations/%LANGUAGE%/t#dacej.tra~
 
 // Images
-ACTION_IF GAME_IS BG2EE BEGIN
-  COPY ~dace_eet/images/lesatho_ee~ ~override~
-END ELSE BEGIN
-  COPY ~dace_eet/images/lesatho~ ~override~
-END
+COPY ~dace_eet/images/lesatho_ee~ ~override~
+
 
 // Creatures
 COPY ~dace_eet/creatures/t#dace8.cre~ ~override/t#dace8.cre~
