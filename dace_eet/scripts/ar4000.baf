@@ -16,3 +16,13 @@ THEN
     Wait(1)
     ActionOverride("T#Dace",StartDialogueNoSet(Player1))
 END
+
+IF
+InPartyAllowDead("T#Dace")
+Global("T#DaceExistsToBJoin","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("T#DaceExistsToBJoin","GLOBAL",1)
+ActionOverride("T#Dace",ChangeAIScript("t#dac25",OVERRIDE))
+Continue()
+END
