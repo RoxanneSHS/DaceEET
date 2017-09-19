@@ -6,3 +6,4 @@ V 3.0
 - fixed dialogue errors
 - EET ToB Transition
 - Weidu version update
+- LoB flags added
