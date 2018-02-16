@@ -174,7 +174,7 @@ END
 APPEND T#DAC25J
 
 // "Gift"
-IF ~RealGlobalTimerExpired("T#DaceToBGiftTalkTimer","GLOBAL") Global("T#DaceToBGiftTalk","GLOBAL",2)~ T#DTG_1
+IF ~ Global("T#DaceToBGiftTalk","GLOBAL",2)~ T#DTG_1
   SAY @25
   ++ @26 + T#DTG_2
   ++ @27 + T#DTG_3
@@ -229,7 +229,7 @@ END
 
 
 // Challenge 1
-IF ~RealGlobalTimerExpired("T#DaceToBChallengeTalkTimer","GLOBAL") Global("T#DaceToBCh1Talk","GLOBAL",2)~ T#DTC1_1
+IF ~ Global("T#DaceToBCh1Talk","GLOBAL",2)~ T#DTC1_1
   SAY @44
   =
   @45
@@ -308,7 +308,7 @@ END
 
 
 // Challenge 2
-IF ~RealGlobalTimerExpired("T#DaceToBChallengeTalkTimer","GLOBAL") Global("T#DaceToBCh2Talk","GLOBAL",2)~ T#DTC2_1
+IF ~ Global("T#DaceToBCh2Talk","GLOBAL",2)~ T#DTC2_1
   SAY @79
   ++ @80 DO ~IncrementGlobal("T#DaceToBCh2Talk","GLOBAL",1)~ + T#DTC2_2
   ++ @81 DO ~IncrementGlobal("T#DaceToBCh2Talk","GLOBAL",1)~ + T#DTC2_2
@@ -337,7 +337,7 @@ END
 
 
 // Challenge 3
-IF ~RealGlobalTimerExpired("T#DaceToBChallengeTalkTimer","GLOBAL") Global("T#DaceToBCh3Talk","GLOBAL",2)~ T#DTC3_1
+IF ~Global("T#DaceToBCh3Talk","GLOBAL",2)~ T#DTC3_1
 SAY @92
 ++ @93 DO ~IncrementGlobal("T#DaceToBCh3Talk","GLOBAL",1)~ + T#DTC3_2
 ++ @94 DO ~IncrementGlobal("T#DaceToBCh3Talk","GLOBAL",1)~ + T#DTC3_3
@@ -403,7 +403,7 @@ END
 
 
 // Challenge 4
-IF ~RealGlobalTimerExpired("T#DaceToBChallengeTalkTimer","GLOBAL") Global("T#DaceToBCh4Talk","GLOBAL",2)~ T#DTC4_1
+IF ~Global("T#DaceToBCh4Talk","GLOBAL",2)~ T#DTC4_1
   SAY @115
   ++ @116 DO ~IncrementGlobal("T#DaceToBCh4Talk","GLOBAL",1)~ + T#DTC4_2
   ++ @117 DO ~IncrementGlobal("T#DaceToBCh4Talk","GLOBAL",1)~ + T#DTC4_2
@@ -486,7 +486,7 @@ END
 
 
 // Challenge 5
-IF ~RealGlobalTimerExpired("T#DaceToBChallengeTalkTimer","GLOBAL") Global("T#DaceToBCh5Talk","GLOBAL",2)~ T#DTC5_1
+IF ~Global("T#DaceToBCh5Talk","GLOBAL",2)~ T#DTC5_1
   SAY @158
   ++ @159 DO ~IncrementGlobal("T#DaceToBCh5Talk","GLOBAL",1)~ + T#DTC5_2
   ++ @160 DO ~IncrementGlobal("T#DaceToBCh5Talk","GLOBAL",1)~ + T#DTC5_2
@@ -715,7 +715,7 @@ END
 
 
 // "Apology"--For friendship AND romance
-IF ~RealGlobalTimerExpired("T#DaceToBApologyTalkTimer","GLOBAL") Global("T#DaceToBApologyTalk","GLOBAL",2)~ T#DTA_1
+IF ~Global("T#DaceToBApologyTalk","GLOBAL",2)~ T#DTA_1
   SAY @235
   =
   @236
@@ -748,7 +748,7 @@ END
 
 
 // "Bacon Crisis"--FRIENDSHIP only
-IF ~RealGlobalTimerExpired("T#DaceToBBaconTalkTimer","GLOBAL") Global("T#DaceToBBaconTalk","GLOBAL",2)~ T#DTB_1
+IF ~Global("T#DaceToBBaconTalk","GLOBAL",2)~ T#DTB_1
   SAY @247
   ++ @248 DO ~IncrementGlobal("T#DaceToBBaconTalk","GLOBAL",1)~ + T#DTB_2
   ++ @249 DO ~IncrementGlobal("T#DaceToBBaconTalk","GLOBAL",1)~ + T#DTB_2
