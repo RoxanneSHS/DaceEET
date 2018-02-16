@@ -425,6 +425,7 @@ IF
     Global("T#DaceFriendshipActive","GLOBAL",1)
     !Global("T#DaceRomanceActive","GLOBAL",2)
     Global("T#DaceToBApologyTalk","GLOBAL",3)
+    Global("T#DaceToBBaconTalk","GLOBAL",0)
 THEN
   RESPONSE #100
     SetGlobal("T#DaceToBBaconTalk","GLOBAL",1)
