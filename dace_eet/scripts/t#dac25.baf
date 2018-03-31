@@ -425,7 +425,6 @@ IF
     Global("T#DaceFriendshipActive","GLOBAL",1)
     !Global("T#DaceRomanceActive","GLOBAL",2)
     Global("T#DaceToBApologyTalk","GLOBAL",3)
-    Global("T#DaceToBBaconTalk","GLOBAL",0)
 THEN
   RESPONSE #100
     SetGlobal("T#DaceToBBaconTalk","GLOBAL",1)
@@ -733,4 +732,12 @@ THEN
   RESPONSE #100
     MoveToObject("Sarevok")
     Interact("Sarevok")
+END
+
+IF
+Global("T#DaceJoined","GLOBAL",0)
+InParty("T#Dace")
+THEN
+  RESPONSE #100
+SetGlobal("T#DaceJoined","GLOBAL",1)
 END

@@ -1113,3 +1113,11 @@ THEN
     MoveToObject("Nalia")
     Interact("Nalia")
 END
+
+IF
+Global("T#DaceJoined","GLOBAL",0)
+InParty("T#Dace")
+THEN
+  RESPONSE #100
+SetGlobal("T#DaceJoined","GLOBAL",1)
+END
