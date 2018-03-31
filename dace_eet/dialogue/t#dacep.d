@@ -18,7 +18,7 @@ END
 
 IF ~~ T#DP1_3
   SAY @2005
-  IF ~~ EXIT
+  IF ~~ DO~JoinParty() SetGlobal("T#DaceJoined","GLOBAL",1)~ EXIT
 END
 
 
