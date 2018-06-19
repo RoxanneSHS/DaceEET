@@ -4,12 +4,34 @@
 // Basics
 BACKUP ~dace_eet/backup~
 //AUTHOR ~Tess Grey (tess.grey@gmail.com) & K'aeloree (kae@spellholdstudios.net)~
-SUPPORT ~Roxanne - https://twitter.com/Roxanne0Walsh or Roxanne_Walsh@mail.com~
+SUPPORT ~Roxanne - https://baldursextendedworld.com/EET-Updates/ or roxanne@baldursextendedworld.com~
 
-VERSION ~V 3.0~
+VERSION ~V 3.1~
 
 // Translations
 AUTO_TRA ~dace_eet/translations/%s~
+
+ALWAYS
+  ACTION_IF GAME_IS ~eet~ BEGIN
+    
+OUTER_SET bg2_chapter = 12
+  
+END ELSE BEGIN
+    
+OUTER_SET bg2_chapter = 0
+  
+END
+  
+OUTER_FOR (i=1; i<=10; i=i+1) BEGIN
+    
+OUTER_SET bg2_chapter = bg2_chapter + 1
+    
+OUTER_SPRINT name_source ~bg2_chapter_%i%~
+    
+OUTER_SET EVAL ~%name_source%~ = bg2_chapter
+  
+END
+END
 
 LANGUAGE ~English~
          ~english~
@@ -20,31 +42,10 @@ LANGUAGE ~English~
 // --------------------------------------------
 // Component setup
 BEGIN @1
-REQUIRE_PREDICATE GAME_IS ~eet~ @65
-
-ACTION_IF FILE_EXISTS_IN_GAME ~saradush.mve~ THEN BEGIN
-  // Adding CD_STATE_NOTVALID
-  APPEND ~STATE.IDS~
-    ~0x80101FEF CD_STATE_NOTVALID~
-    UNLESS ~CD_STATE_NOTVALID~
-    
-  // Fixing Imoen's dialogue file
-  ACTION_IF FILE_EXISTS_IN_GAME ~mel01.cre~ THEN BEGIN
-    COPY_EXISTING ~interdia.2da~ ~override~
-      SET_2DA_ENTRY 17 1 2 ~BIMOEN2~ // fixes ToB version
-      BUT_ONLY_IF_IT_CHANGES
-  END ELSE BEGIN
-    APPEND ~interdia.2da~ ~IMOEN     BIMOEN2~ // fixes SoA version
-      UNLESS ~BIMOEN2~
-  END
-
-  // Fixing broken IDS files and times
-  INCLUDE ~dace_eet/lib/ids.tph~
-  INCLUDE ~dace_eet/lib/times.tph~
-END
+REQUIRE_PREDICATE GAME_IS ~eet bg2ee~ @65
 
 // Dialogue files
-COMPILE ~dace_eet/dialogue/t#dace.d~
+COMPILE EVALUATE_BUFFER ~dace_eet/dialogue/t#dace.d~
 COMPILE ~dace_eet/dialogue/bt#dace.d~
 COMPILE ~dace_eet/dialogue/t#dacej.d~
 COMPILE ~dace_eet/dialogue/t#dacep.d~ 
@@ -56,7 +57,7 @@ COMPILE ~dace_eet/dialogue/t#dac25p.d~
 
 
 // Compiling scripts
-COMPILE ~dace_eet/scripts/t#dace.baf~
+COMPILE EVALUATE_BUFFER ~dace_eet/scripts/t#dace.baf~
 COMPILE ~dace_eet/scripts/t#daced.baf~
 COMPILE ~dace_eet/scripts/t#dac25.baf~
 COMPILE ~dace_eet/scripts/t#dac25d.baf~
@@ -70,9 +71,9 @@ COMPILE ~dace_eet/scripts/t#dawra.baf~
 EXTEND_BOTTOM ~bodhiamb.bcs~ ~dace_eet/scripts/bodhiamb.baf~
 EXTEND_BOTTOM ~cleanse.bcs~  ~dace_eet/scripts/cleanse.baf~
 EXTEND_BOTTOM ~vampamb.bcs~  ~dace_eet/scripts/vampamb.baf~
-EXTEND_BOTTOM ~ar0300.bcs~   ~dace_eet/scripts/ar0300.baf~
+EXTEND_BOTTOM ~ar0300.bcs~   ~dace_eet/scripts/ar0300.baf~ EVALUATE_BUFFER
 EXTEND_BOTTOM ~ar0809.bcs~   ~dace_eet/scripts/ar0809.baf~
-EXTEND_BOTTOM ~ar2000.bcs~   ~dace_eet/scripts/ar2000.baf~
+EXTEND_BOTTOM ~ar2000.bcs~   ~dace_eet/scripts/ar2000.baf~ EVALUATE_BUFFER
 EXTEND_BOTTOM ~ar4000.bcs~   ~dace_eet/scripts/ar4000.baf~
 EXTEND_BOTTOM ~ar6200.bcs~   ~dace_eet/scripts/ar6200.baf~
 EXTEND_TOP ~ar0700.bcs~   ~dace_eet/scripts/ar0700.baf~

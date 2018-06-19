@@ -3,8 +3,8 @@
 // --------------------------------------------
 // Spawn Dace
 IF
-    GlobalGT("chapter","GLOBAL",14)
-    GlobalLT("chapter","GLOBAL",18)
+    GlobalGT("chapter","GLOBAL",%bg2_chapter_2%)
+    GlobalLT("chapter","GLOBAL",%bg2_chapter_6%)
     Global("T#DaceJoined","GLOBAL",0)
     Global("T#DaceExistsTrademeet","GLOBAL",0)
 THEN

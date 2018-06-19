@@ -115,7 +115,7 @@ END
 
 
 // Dcks in chapter 18
-IF ~Global("Chapter","GLOBAL",18) AreaCheck("AR0300")~ T#DJ3_1
+IF ~Global("Chapter","GLOBAL",%bg2_chapter_6%) AreaCheck("AR0300")~ T#DJ3_1
   SAY @39
   ++ @40 + T#DJ3_5
   ++ @41 + T#DJ3_2
