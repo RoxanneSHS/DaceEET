@@ -51,7 +51,7 @@ COMPILE ~dace_eet/dialogue/t#dacej.d~
 COMPILE ~dace_eet/dialogue/t#dacep.d~ 
   USING ~dace_eet/translations/%LANGUAGE%/t#dacej.tra~
 COMPILE ~dace_eet/dialogue/bt#dac25.d~
-COMPILE ~dace_eet/dialogue/t#dac25j.d~
+COMPILE EVALUATE_BUFFER~dace_eet/dialogue/t#dac25j.d~
 COMPILE ~dace_eet/dialogue/t#dac25.d~
 COMPILE ~dace_eet/dialogue/t#dac25p.d~
 

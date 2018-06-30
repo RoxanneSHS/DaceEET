@@ -120,14 +120,14 @@ END
 
 // odren--taking on WK challenge
 INTERJECT_COPY_TRANS GORODR1 11 T#DWATCHERSToB
-== T#DAC25J IF ~InParty("T#Dace") !StateCheck("T#Dace",CD_STATE_NOTVALID)~ THEN
+== T#DAC25J IF ~InParty("T#Dace") !StateCheck("T#Dace",CD_STATE_NOTVALID) GlobalGT("Chapter","Global",%bg2_chapter_7%)~ THEN
 @17
 END
 
 
 // old priest--slippers
 INTERJECT_COPY_TRANS GORPRI1 2 T#DSLIPPERSToB
-== T#DAC25J IF ~InParty("T#Dace") !StateCheck("T#Dace",CD_STATE_NOTVALID)~ THEN
+== T#DAC25J IF ~InParty("T#Dace") !StateCheck("T#Dace",CD_STATE_NOTVALID) GlobalGT("Chapter","Global",%bg2_chapter_7%)~ THEN
 @18
 == GORPRI1 @19
 END
@@ -135,35 +135,35 @@ END
 
 // yakman
 INTERJECT_COPY_TRANS GORMAD1 1 T#DYAKMANToB
-== T#DAC25J IF ~InParty("T#Dace") !StateCheck("T#Dace",CD_STATE_NOTVALID)~ THEN
+== T#DAC25J IF ~InParty("T#Dace") !StateCheck("T#Dace",CD_STATE_NOTVALID) GlobalGT("Chapter","Global",%bg2_chapter_7%)~ THEN
 @20
 END
 
 
 // deck of many things
 INTERJECT_COPY_TRANS GORCAMB 17 T#DDECKToB
-== T#DAC25J IF ~InParty("T#Dace") !StateCheck("T#Dace",CD_STATE_NOTVALID)~ THEN
+== T#DAC25J IF ~InParty("T#Dace") !StateCheck("T#Dace",CD_STATE_NOTVALID) GlobalGT("Chapter","Global",%bg2_chapter_7%)~ THEN
 @21
 END
 
 
 // machine
 INTERJECT_COPY_TRANS GORCAR 8 T#DMACHINEToB
-== T#DAC25J IF ~InParty("T#Dace") !StateCheck("T#Dace",CD_STATE_NOTVALID)~ THEN
+== T#DAC25J IF ~InParty("T#Dace") !StateCheck("T#Dace",CD_STATE_NOTVALID) GlobalGT("Chapter","Global",%bg2_chapter_7%)~ THEN
 @22
 END
 
 
 // green “challenge” dragon--after seeing red sentient dragon
 INTERJECT_COPY_TRANS FSDRAGON 0 T#DWKDRAGONSToB
-== T#DAC25J IF ~InParty("T#Dace") !StateCheck("T#Dace",CD_STATE_NOTVALID)~ THEN
+== T#DAC25J IF ~InParty("T#Dace") !StateCheck("T#Dace",CD_STATE_NOTVALID) GlobalGT("Chapter","Global",%bg2_chapter_7%)~ THEN
 @23
 END
 
 
 // odren dies
 INTERJECT_COPY_TRANS GORODR1 65 T#DODRENToB
-== T#DAC25J IF ~InParty("T#Dace") !StateCheck("T#Dace",CD_STATE_NOTVALID)~ THEN
+== T#DAC25J IF ~InParty("T#Dace") !StateCheck("T#Dace",CD_STATE_NOTVALID) GlobalGT("Chapter","Global",%bg2_chapter_7%)~ THEN
 @24
 END
 

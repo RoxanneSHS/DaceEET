@@ -520,14 +520,14 @@ END
 
 // odren--taking on WK challenge
 INTERJECT_COPY_TRANS GORODR1 11 T#DWATCHERS
-== T#DACEJ IF ~InParty("T#Dace") !StateCheck("T#Dace",CD_STATE_NOTVALID)~ THEN
+== T#DACEJ IF ~InParty("T#Dace") !StateCheck("T#Dace",CD_STATE_NOTVALID) GlobalLT("Chapter","Global",%bg2_chapter_8%)~ THEN
 @98
 END
 
 
 // old priest--slippers
 INTERJECT_COPY_TRANS GORPRI1 2 T#DSLIPPERS
-== T#DACEJ IF ~InParty("T#Dace") !StateCheck("T#Dace",CD_STATE_NOTVALID)~ THEN
+== T#DACEJ IF ~InParty("T#Dace") !StateCheck("T#Dace",CD_STATE_NOTVALID) GlobalLT("Chapter","Global",%bg2_chapter_8%)~ THEN
 @99
 == GORPRI1 @100
 END
@@ -535,35 +535,35 @@ END
 
 // yakman
 INTERJECT_COPY_TRANS GORMAD1 1 T#DYAKMAN
-== T#DACEJ IF ~InParty("T#Dace") !StateCheck("T#Dace",CD_STATE_NOTVALID)~ THEN
+== T#DACEJ IF ~InParty("T#Dace") !StateCheck("T#Dace",CD_STATE_NOTVALID) GlobalLT("Chapter","Global",%bg2_chapter_8%)~ THEN
 @101
 END
 
 
 // deck of many things
 INTERJECT_COPY_TRANS GORCAMB 17 T#DDECK
-== T#DACEJ IF ~InParty("T#Dace") !StateCheck("T#Dace",CD_STATE_NOTVALID)~ THEN
+== T#DACEJ IF ~InParty("T#Dace") !StateCheck("T#Dace",CD_STATE_NOTVALID) GlobalLT("Chapter","Global",%bg2_chapter_8%)~ THEN
 @102
 END
 
 
 // machine
 INTERJECT_COPY_TRANS GORCAR 8 T#DMACHINE
-== T#DACEJ IF ~InParty("T#Dace") !StateCheck("T#Dace",CD_STATE_NOTVALID)~ THEN
+== T#DACEJ IF ~InParty("T#Dace") !StateCheck("T#Dace",CD_STATE_NOTVALID) GlobalLT("Chapter","Global",%bg2_chapter_8%)~ THEN
 @103
 END
 
 
 // green “challenge” dragon--after seeing red sentient dragon
 INTERJECT_COPY_TRANS FSDRAGON 0 T#DWKDRAGONS
-== T#DACEJ IF ~InParty("T#Dace") !StateCheck("T#Dace",CD_STATE_NOTVALID)~ THEN
+== T#DACEJ IF ~InParty("T#Dace") !StateCheck("T#Dace",CD_STATE_NOTVALID) GlobalLT("Chapter","Global",%bg2_chapter_8%)~ THEN
 @104
 END
 
 
 // odren dies
 INTERJECT_COPY_TRANS GORODR1 65 T#DODREN
-== T#DACEJ IF ~InParty("T#Dace") !StateCheck("T#Dace",CD_STATE_NOTVALID)~ THEN
+== T#DACEJ IF ~InParty("T#Dace") !StateCheck("T#Dace",CD_STATE_NOTVALID) GlobalLT("Chapter","Global",%bg2_chapter_8%)~ THEN
 @105
 END
 
