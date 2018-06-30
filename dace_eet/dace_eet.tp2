@@ -47,7 +47,7 @@ REQUIRE_PREDICATE GAME_IS ~eet bg2ee~ @65
 // Dialogue files
 COMPILE EVALUATE_BUFFER ~dace_eet/dialogue/t#dace.d~
 COMPILE ~dace_eet/dialogue/bt#dace.d~
-COMPILE ~dace_eet/dialogue/t#dacej.d~
+COMPILE EVALUATE_BUFFER~dace_eet/dialogue/t#dacej.d~
 COMPILE ~dace_eet/dialogue/t#dacep.d~ 
   USING ~dace_eet/translations/%LANGUAGE%/t#dacej.tra~
 COMPILE ~dace_eet/dialogue/bt#dac25.d~
