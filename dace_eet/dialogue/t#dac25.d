@@ -7,11 +7,11 @@ BEGIN T#DAC25
 //BEGINNING OF ILLASERA STUFF, WHICH IS GOING TO TAKE SOME MILDLY COMPLICATED-ISH CODING I DON'T QUITE UNDERSTAND YET, AND IS THUS JUST FLESHED OUT IN TEXT HERE
 //illasera--several possibilities
 
-EXTEND_BOTTOM ILLASERA 8
+/*EXTEND_BOTTOM ILLASERA 8
   IF ~!InParty("T#Dace") OR(2) !Global("T#DaceFriendshipActive","GLOBAL",1) Global("T#DaceJackass","GLOBAL",1) OR(2) !Global("T#DaceRomanceActive","GLOBAL",2) Global("T#DaceJackass","GLOBAL",1)~ DO ~ClearAllActions() StartCutSceneMode() StartCutScene("t#dtcut")~ EXIT
   IF ~InParty("T#Dace") OR(2) !Global("T#DaceFriendshipActive","GLOBAL",1) Global("T#DaceJackass","GLOBAL",1) OR(2) !Global("T#DaceRomanceActive","GLOBAL",2) Global("T#DaceJackass","GLOBAL",1)~ EXTERN T#DAC25J T#DaceToB1
   IF ~InParty("T#Dace") OR(2) Global("T#DaceFriendshipActive","GLOBAL",1) Global("T#DaceRomanceActive","GLOBAL",2)~ EXTERN T#DAC25J T#DaceToB2
-END
+END */
 
 
 APPEND T#DAC25
