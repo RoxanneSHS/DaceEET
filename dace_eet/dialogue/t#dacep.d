@@ -42,7 +42,7 @@ END
 
 
 // Int Track Leave
-IF ~Global("T#DaceJoined","GLOBAL",1)~ T#DP2_1
+IF ~ OR(2) Global("T#DaceJoined","GLOBAL",1) Global("T#DaceJoined","GLOBAL",0)~ T#DP2_1
   SAY @2012
   ++ @2013 + T#DP2_2
   ++ @2014  + T#DP2_3

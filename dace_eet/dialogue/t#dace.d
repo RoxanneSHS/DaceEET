@@ -4,7 +4,7 @@
 BEGIN T#DACE
 
 // Initial encounter
-IF ~AreaCheck("AR0700")~ T#DJ1_1
+IF ~OR(2) AreaCheck("AR0700")AreaCheck("AR0702")~ T#DJ1_1
   SAY @0
   ++ @1 + T#DJ1_3
   ++ @2 + T#DJ1_3
