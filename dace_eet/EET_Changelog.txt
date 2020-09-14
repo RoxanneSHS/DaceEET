@@ -10,4 +10,5 @@ V 3.0
 
 V 3.1
 --------
-BG2EE compatibility
+- BG2EE compatibility
+- trigger corrections
