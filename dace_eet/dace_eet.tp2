@@ -4,9 +4,9 @@
 // Basics
 BACKUP ~dace_eet/backup~
 //AUTHOR ~Tess Grey (tess.grey@gmail.com) & K'aeloree (kae@spellholdstudios.net)~
-SUPPORT ~Roxanne - https://baldursextendedworld.com/EET-Updates/ or roxanne@baldursextendedworld.com~
+SUPPORT ~Roxanne - https://github.com/RoxanneSHS/DaceEET/issues~
 
-VERSION ~V 3.1~
+VERSION ~V 3.1b~
 
 // Translations
 AUTO_TRA ~dace_eet/translations/%s~
